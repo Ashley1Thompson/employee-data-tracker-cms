@@ -11,7 +11,7 @@ CREATE TABLE department (
 CREATE TABLE jobrole (
   id INT NOT NULL PRIMARY KEY,
   title VARCHAR(30),
-  SALARY DECIMAL(10,2),
+  salary DECIMAL(10,2),
   FOREIGN KEY (department_id),
   REFERENCES department(id),
   ON DELETE SET NULL
